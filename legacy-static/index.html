@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReciclaMack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <path d="M14 2L4 8v6c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V8L14 2z" fill="#4CAF50" opacity=".25"/>
+          <path d="M10 14l3 3 6-6" stroke="#4CAF50" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7 19l2-4h10l2 4H7z" fill="#4CAF50" opacity=".5"/>
+          <path d="M9 15l1.5-3h7L19 15" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>ReciclaMack</span>
+      </a>
+      <button class="header__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="mainNav">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#tipos" class="nav-link">Tipos de lixo</a>
+        <a href="#coleta" class="nav-link">Coleta</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#coleta" class="btn btn--primary">Encontrar ponto →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="badge">♻️ Sustentabilidade em ação</span>
+        <h1 class="hero__title">Recicle certo.<br>Impacte o mundo.</h1>
+        <p class="hero__sub">Aprenda a separar, armazenar e descartar cada tipo de resíduo corretamente. Pequenas ações fazem grande diferença para o planeta.</p>
+        <div class="hero__actions">
+          <a href="#tipos" class="btn btn--primary btn--lg">Ver tipos de lixo</a>
+          <a href="#coleta" class="btn btn--outline btn--lg">Pontos de coleta</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><strong>5</strong><span>categorias</span></div>
+          <div class="stat"><strong>8+</strong><span>pontos de coleta</span></div>
+          <div class="stat"><strong>100%</strong><span>gratuito</span></div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__illustration">
+          <img src="images/hero-recycle.svg" alt="Ilustração de reciclagem — planeta Terra com setas de reciclagem ao redor" width="380" height="304" />
+        </div>
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f9fafb"/></svg>
+    </div>
+  </section>
+
+  <!-- TIPOS DE LIXO -->
+  <section class="tipos" id="tipos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Guia de reciclagem</span>
+        <h2>Tipos de lixo e como descartar</h2>
+        <p>Cada material tem um destino correto. Clique em uma categoria para ver exemplos, como separar e onde descartar.</p>
+      </div>
+
+      <div class="tipos__grid">
+
+        <!-- Papel -->
+        <div class="tipo-card" data-color="blue">
+          <button class="tipo-card__header" aria-expanded="false">
+            <div class="tipo-card__icon-wrap" style="background:#DBEAFE;">
+              <span class="tipo-card__icon">📄</span>
+            </div>
+            <div class="tipo-card__meta">
+              <h3>Papel e Papelão</h3>
+              <span class="tipo-card__tag" style="background:#DBEAFE;color:#1D4ED8;">Linha Azul</span>
+            </div>
+            <svg class="tipo-card__arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tipo-card__body">
+            <div class="tipo-card__content">
+              <div class="info-col">
+                <h4>📌 Exemplos</h4>
+                <ul>
+                  <li>Jornais e revistas</li>
+                  <li>Folhas de papel</li>
+                  <li>Caixas de papelão</li>
+                  <li>Embalagens Tetra Pak</li>
+                  <li>Cadernos (sem espiral)</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>✅ Como separar</h4>
+                <ul>
+                  <li>Retire grampos e clipes metálicos</li>
+                  <li>Desdobre as caixas de papelão</li>
+                  <li>Mantenha seco — papel molhado não é reciclável</li>
+                  <li>Embale jornais em fardo amarrado</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>🚫 Não recicláveis</h4>
+                <ul>
+                  <li>Papel higiênico usado</li>
+                  <li>Guardanapos e lenços usados</li>
+                  <li>Papel carbono</li>
+                  <li>Papel plastificado</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tipo-card__images">
+              <figure class="figure--illustration"><img src="images/papel.svg" alt="Ilustração papel e papelão recicláveis" loading="lazy"/><figcaption>Ilustração</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=200&h=140&fit=crop" alt="Papelão reciclável" loading="lazy"/><figcaption>Papelão</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1614103619169-aaa0e59c0a55?w=200&h=140&fit=crop" alt="Caixas de papelão" loading="lazy"/><figcaption>Caixas</figcaption></figure>
+            </div>
+            <div class="tipo-card__tip">
+              <span>💡</span> Guarde papéis em local seco e separado de restos de comida. Papelão molhado perde sua fibra e não pode ser reciclado.
+            </div>
+          </div>
+        </div>
+
+        <!-- Plástico -->
+        <div class="tipo-card" data-color="red">
+          <button class="tipo-card__header" aria-expanded="false">
+            <div class="tipo-card__icon-wrap" style="background:#FEE2E2;">
+              <span class="tipo-card__icon">🥤</span>
+            </div>
+            <div class="tipo-card__meta">
+              <h3>Plástico</h3>
+              <span class="tipo-card__tag" style="background:#FEE2E2;color:#B91C1C;">Linha Vermelha</span>
+            </div>
+            <svg class="tipo-card__arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tipo-card__body">
+            <div class="tipo-card__content">
+              <div class="info-col">
+                <h4>📌 Exemplos</h4>
+                <ul>
+                  <li>Garrafas PET (água, refrigerante)</li>
+                  <li>Sacolas plásticas</li>
+                  <li>Potes e recipientes</li>
+                  <li>Embalagens de shampoo</li>
+                  <li>Canudos e tampas</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>✅ Como separar</h4>
+                <ul>
+                  <li>Lave para retirar restos de alimentos</li>
+                  <li>Amasse garrafas para economizar espaço</li>
+                  <li>Verifique o símbolo de reciclagem (♻ 1–7)</li>
+                  <li>Agrupe por tipo quando possível</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>🚫 Não recicláveis</h4>
+                <ul>
+                  <li>Fraldas descartáveis</li>
+                  <li>Isopor com restos de comida</li>
+                  <li>Embalagens metalizada (biscoito)</li>
+                  <li>Plásticos muito sujos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tipo-card__images">
+              <figure class="figure--illustration"><img src="images/plastico.svg" alt="Ilustração plásticos recicláveis" loading="lazy"/><figcaption>Ilustração</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1571727153934-b9e0059b7ab2?w=200&h=140&fit=crop" alt="Garrafas plásticas" loading="lazy"/><figcaption>Garrafas PET</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=140&fit=crop" alt="Potes plásticos" loading="lazy"/><figcaption>Potes</figcaption></figure>
+            </div>
+            <div class="tipo-card__tip">
+              <span>💡</span> Retire o excesso de líquido e lave com água. Embalagens sujas contaminam todo o lote de recicláveis.
+            </div>
+          </div>
+        </div>
+
+        <!-- Metal -->
+        <div class="tipo-card" data-color="yellow">
+          <button class="tipo-card__header" aria-expanded="false">
+            <div class="tipo-card__icon-wrap" style="background:#FEF9C3;">
+              <span class="tipo-card__icon">🥫</span>
+            </div>
+            <div class="tipo-card__meta">
+              <h3>Metal</h3>
+              <span class="tipo-card__tag" style="background:#FEF9C3;color:#92400E;">Linha Amarela</span>
+            </div>
+            <svg class="tipo-card__arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tipo-card__body">
+            <div class="tipo-card__content">
+              <div class="info-col">
+                <h4>📌 Exemplos</h4>
+                <ul>
+                  <li>Latas de alumínio (cerveja, refrigerante)</li>
+                  <li>Latas de conserva (aço)</li>
+                  <li>Tampas metálicas</li>
+                  <li>Papel alumínio limpo</li>
+                  <li>Ferragens e parafusos</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>✅ Como separar</h4>
+                <ul>
+                  <li>Lave e seque antes de descartar</li>
+                  <li>Amasse latas para reduzir volume</li>
+                  <li>Cuidado com bordas cortantes</li>
+                  <li>Separe alumínio do ferro/aço</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>🚫 Não recicláveis</h4>
+                <ul>
+                  <li>Latas com restos de tinta</li>
+                  <li>Esponjas de aço usadas</li>
+                  <li>Clipes e grampos (juntar a papel)</li>
+                  <li>Pilhas e baterias (descarte especial)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tipo-card__images">
+              <figure class="figure--illustration"><img src="images/metal.svg" alt="Ilustração metais recicláveis" loading="lazy"/><figcaption>Ilustração</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=200&h=140&fit=crop" alt="Latas de alumínio" loading="lazy"/><figcaption>Latas alumínio</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1542601906897-ecd680e3b3ba?w=200&h=140&fit=crop" alt="Papel alumínio" loading="lazy"/><figcaption>Papel alumínio</figcaption></figure>
+            </div>
+            <div class="tipo-card__tip">
+              <span>💡</span> O alumínio é 100% reciclável infinitas vezes! Reciclar uma lata economiza energia suficiente para manter uma TV ligada por 3 horas.
+            </div>
+          </div>
+        </div>
+
+        <!-- Vidro -->
+        <div class="tipo-card" data-color="green">
+          <button class="tipo-card__header" aria-expanded="false">
+            <div class="tipo-card__icon-wrap" style="background:#D1FAE5;">
+              <span class="tipo-card__icon">🍾</span>
+            </div>
+            <div class="tipo-card__meta">
+              <h3>Vidro</h3>
+              <span class="tipo-card__tag" style="background:#D1FAE5;color:#065F46;">Linha Verde</span>
+            </div>
+            <svg class="tipo-card__arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tipo-card__body">
+            <div class="tipo-card__content">
+              <div class="info-col">
+                <h4>📌 Exemplos</h4>
+                <ul>
+                  <li>Garrafas de bebida</li>
+                  <li>Potes de conserva</li>
+                  <li>Frascos de perfume</li>
+                  <li>Copos e taças inteiros</li>
+                  <li>Embalagens de vidro transparente</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>✅ Como separar</h4>
+                <ul>
+                  <li>Lave para remover restos de alimentos</li>
+                  <li>NUNCA quebre — cacos cortam os coletores</li>
+                  <li>Retire tampas metálicas</li>
+                  <li>Embale cacos acidentais em papel jornal</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>🚫 Não recicláveis</h4>
+                <ul>
+                  <li>Espelhos e vidros temperados</li>
+                  <li>Vidro de janela (composição diferente)</li>
+                  <li>Lâmpadas (descarte especial)</li>
+                  <li>Cerâmicas e porcelanas</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tipo-card__images">
+              <figure class="figure--illustration"><img src="images/vidro.svg" alt="Ilustração vidros recicláveis" loading="lazy"/><figcaption>Ilustração</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1547496502-affa22e38b71?w=200&h=140&fit=crop" alt="Garrafas de vidro" loading="lazy"/><figcaption>Garrafas</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1536939459926-301ac1f1b7c5?w=200&h=140&fit=crop" alt="Frascos de vidro" loading="lazy"/><figcaption>Frascos</figcaption></figure>
+            </div>
+            <div class="tipo-card__tip">
+              <span>💡</span> O vidro pode ser reciclado infinitas vezes sem perder qualidade. Mas atenção: vidros com ligas como espelhos e pyrex não são recicláveis no processo comum.
+            </div>
+          </div>
+        </div>
+
+        <!-- Eletrônicos -->
+        <div class="tipo-card" data-color="purple">
+          <button class="tipo-card__header" aria-expanded="false">
+            <div class="tipo-card__icon-wrap" style="background:#EDE9FE;">
+              <span class="tipo-card__icon">💻</span>
+            </div>
+            <div class="tipo-card__meta">
+              <h3>Eletrônicos (REEE)</h3>
+              <span class="tipo-card__tag" style="background:#EDE9FE;color:#5B21B6;">Descarte Especial</span>
+            </div>
+            <svg class="tipo-card__arrow" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tipo-card__body">
+            <div class="tipo-card__content">
+              <div class="info-col">
+                <h4>📌 Exemplos</h4>
+                <ul>
+                  <li>Computadores e notebooks</li>
+                  <li>Celulares e tablets</li>
+                  <li>Televisores e monitores</li>
+                  <li>Impressoras e scanners</li>
+                  <li>Pilhas e baterias</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>✅ Como separar</h4>
+                <ul>
+                  <li>Apague os dados antes de descartar</li>
+                  <li>Separe cabos e acessórios</li>
+                  <li>Leve a pontos de coleta especializados</li>
+                  <li>Verifique programas de logística reversa</li>
+                </ul>
+              </div>
+              <div class="info-col">
+                <h4>⚠️ Atenção especial</h4>
+                <ul>
+                  <li>NUNCA jogue no lixo comum</li>
+                  <li>Contêm substâncias tóxicas (chumbo, mercúrio)</li>
+                  <li>Procure ecopontos certificados</li>
+                  <li>Mackenzie tem ponto de coleta!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tipo-card__images">
+              <figure class="figure--illustration"><img src="images/eletronicos.svg" alt="Ilustração eletrônicos para descarte" loading="lazy"/><figcaption>Ilustração</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=140&fit=crop" alt="Equipamentos eletrônicos" loading="lazy"/><figcaption>Eletrônicos</figcaption></figure>
+              <figure><img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=200&h=140&fit=crop" alt="Celulares velhos" loading="lazy"/><figcaption>Celulares</figcaption></figure>
+            </div>
+            <div class="tipo-card__tip tipo-card__tip--warning">
+              <span>⚠️</span> Resíduos eletroeletrônicos (REEE) contêm metais pesados tóxicos. NUNCA descarte no lixo comum. Use os pontos de coleta especializados indicados no mapa abaixo.
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tipos__grid -->
+
+      <!-- Como armazenar -->
+      <div class="armazenamento">
+        <h3>🗃️ Como armazenar para transporte</h3>
+        <div class="armazenamento__steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h4>Limpe os materiais</h4>
+            <p>Lave embalagens com restos de alimentos. Material sujo contamina os demais e inviabiliza a reciclagem.</p>
+          </div>
+          <div class="step__arrow">→</div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h4>Separe por categoria</h4>
+            <p>Use sacos ou caixas diferentes para papel, plástico, metal e vidro. Facilita o trabalho nos centros de triagem.</p>
+          </div>
+          <div class="step__arrow">→</div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h4>Reduza o volume</h4>
+            <p>Amasse latas e garrafas PET, desdobre caixas de papelão. Ocupa menos espaço e facilita o transporte.</p>
+          </div>
+          <div class="step__arrow">→</div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <h4>Leve ao ponto de coleta</h4>
+            <p>Encontre o ponto mais próximo de você no mapa abaixo ou aguarde a coleta seletiva em sua região.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PONTOS DE COLETA -->
+  <section class="coleta" id="coleta">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--light">Onde descartar</span>
+        <h2>Pontos de coleta</h2>
+        <p>Encontre o ponto de descarte mais próximo de você. Filtre por região e tipo de resíduo.</p>
+      </div>
+
+      <div class="coleta__layout">
+
+        <!-- Filtros e lista -->
+        <div class="coleta__sidebar">
+          <div class="coleta__search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="searchInput" placeholder="Buscar por bairro ou endereço..." />
+          </div>
+
+          <div class="coleta__filters">
+            <p class="filter-label">Filtrar por região:</p>
+            <div class="filter-btns">
+              <button class="filter-btn active" data-region="all">Todos</button>
+              <button class="filter-btn" data-region="higienopolis">Higienópolis</button>
+              <button class="filter-btn" data-region="perdizes">Perdizes</button>
+              <button class="filter-btn" data-region="barra-funda">Barra Funda</button>
+              <button class="filter-btn" data-region="vila-madalena">Vila Madalena</button>
+            </div>
+          </div>
+
+          <div class="coleta__list" id="coletaList">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="coleta__map-wrap">
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__inner">
+      <div class="sobre__text">
+        <span class="section-tag">Sobre o projeto</span>
+        <h2>ReciclaMack</h2>
+        <p>O ReciclaMack é uma iniciativa da <strong>Universidade Presbiteriana Mackenzie</strong> para promover a cultura da reciclagem e do descarte consciente na comunidade acadêmica e no entorno do campus.</p>
+        <p>Nosso objetivo é facilitar o acesso à informação sobre reciclagem, tornando o processo simples, intuitivo e acessível para todos — desde a separação correta em casa até o descarte no ponto adequado.</p>
+        <div class="sobre__values">
+          <div class="value-item">
+            <span class="value-icon">🌱</span>
+            <div>
+              <h4>Sustentabilidade</h4>
+              <p>Promovemos práticas que reduzem o impacto ambiental e contribuem para um futuro mais verde.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">📚</span>
+            <div>
+              <h4>Educação</h4>
+              <p>Informação clara e acessível para toda a comunidade, do aluno ao visitante.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">🤝</span>
+            <div>
+              <h4>Comunidade</h4>
+              <p>Parcerias com ecopontos locais e cooperativas de catadores para maximizar o impacto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sobre__img">
+        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500&h=400&fit=crop" alt="Reciclagem e sustentabilidade" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="header__logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M14 2L4 8v6c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V8L14 2z" fill="#4CAF50" opacity=".4"/>
+            <path d="M10 14l3 3 6-6" stroke="#4CAF50" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>ReciclaMack</span>
+        </a>
+        <p>Reciclagem consciente para um futuro sustentável.</p>
+      </div>
+      <div class="footer__links">
+        <h5>Navegação</h5>
+        <a href="#inicio">Início</a>
+        <a href="#tipos">Tipos de lixo</a>
+        <a href="#coleta">Pontos de coleta</a>
+        <a href="#sobre">Sobre</a>
+      </div>
+      <div class="footer__links">
+        <h5>Categorias</h5>
+        <a href="#tipos">Papel e Papelão</a>
+        <a href="#tipos">Plástico</a>
+        <a href="#tipos">Metal</a>
+        <a href="#tipos">Vidro</a>
+        <a href="#tipos">Eletrônicos</a>
+      </div>
+      <div class="footer__contact">
+        <h5>Contato</h5>
+        <p>📍 Rua da Consolação, 930<br>Higienópolis, São Paulo - SP</p>
+        <p>📧 reciclamack@mackenzie.br</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 ReciclaMack — Universidade Presbiteriana Mackenzie</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

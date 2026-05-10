@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220">
+  <defs>
+    <linearGradient id="bgPaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BFDBFE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="320" height="220" rx="16" fill="url(#bgPaper)"/>
+
+  <!-- Stack of papers/cardboard -->
+  <!-- Bottom paper shadow -->
+  <rect x="72" y="108" width="120" height="90" rx="4" fill="#93C5FD" opacity=".4"/>
+  <!-- Cardboard box open -->
+  <rect x="68" y="100" width="124" height="92" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="68" y="100" width="124" height="18" rx="4" fill="#BFDBFE" stroke="#3B82F6" stroke-width="2"/>
+  <!-- Box lines -->
+  <line x1="130" y1="100" x2="130" y2="192" stroke="#93C5FD" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Flaps open -->
+  <path d="M68 100 L55 80 L98 80 L110 100" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M192 100 L205 80 L162 80 L150 100" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Papers/Newspaper stack -->
+  <rect x="155" y="82" width="80" height="100" rx="3" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" transform="rotate(8, 195, 132)"/>
+  <rect x="158" y="78" width="80" height="100" rx="3" fill="#FFF" stroke="#93C5FD" stroke-width="1.5" transform="rotate(4, 198, 128)"/>
+  <rect x="160" y="75" width="80" height="100" rx="3" fill="#F8FAFC" stroke="#3B82F6" stroke-width="1.5"/>
+  <!-- Lines on paper -->
+  <line x1="168" y1="90" x2="232" y2="90" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="168" y1="100" x2="232" y2="100" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="168" y1="110" x2="232" y2="110" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="168" y1="120" x2="215" y2="120" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="168" y="128" width="30" height="18" rx="2" fill="#DBEAFE"/>
+
+  <!-- Recycle symbol on box -->
+  <text x="100" y="158" font-family="Arial" font-size="28" text-anchor="middle" fill="#3B82F6" opacity=".6">♻</text>
+
+  <!-- Blue ribbon/tag -->
+  <rect x="60" y="62" width="70" height="22" rx="11" fill="#2563EB"/>
+  <text x="95" y="77" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">LINHA AZUL</text>
+
+  <!-- Label -->
+  <rect x="60" y="185" width="200" height="28" rx="8" fill="rgba(255,255,255,0.7)"/>
+  <text x="160" y="204" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1D4ED8">📄 Papel e Papelão</text>
+</svg>

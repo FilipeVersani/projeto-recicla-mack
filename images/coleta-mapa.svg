@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0FDF4"/>
+      <stop offset="100%" style="stop-color:#DCFCE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="#E8F4FD"/>
+
+  <!-- Street grid -->
+  <!-- Horizontal streets -->
+  <rect x="0" y="60"  width="400" height="16" fill="#F9FAFB" rx="2"/>
+  <rect x="0" y="120" width="400" height="14" fill="#F9FAFB" rx="2"/>
+  <rect x="0" y="180" width="400" height="14" fill="#F9FAFB" rx="2"/>
+  <rect x="0" y="240" width="400" height="16" fill="#F9FAFB" rx="2"/>
+  <!-- Vertical streets -->
+  <rect x="60"  y="0" width="14" height="300" fill="#F9FAFB" rx="2"/>
+  <rect x="130" y="0" width="12" height="300" fill="#F9FAFB" rx="2"/>
+  <rect x="200" y="0" width="14" height="300" fill="#F9FAFB" rx="2"/>
+  <rect x="270" y="0" width="12" height="300" fill="#F9FAFB" rx="2"/>
+  <rect x="340" y="0" width="14" height="300" fill="#F9FAFB" rx="2"/>
+
+  <!-- City blocks -->
+  <rect x="0"   y="0"   width="58"  height="58"  fill="#D1FAE5" rx="4" opacity=".6"/>
+  <rect x="76"  y="0"   width="52"  height="58"  fill="#DBEAFE" rx="4" opacity=".6"/>
+  <rect x="144" y="0"   width="54"  height="58"  fill="#FEE2E2" rx="4" opacity=".6"/>
+  <rect x="214" y="0"   width="54"  height="58"  fill="#FEF9C3" rx="4" opacity=".6"/>
+  <rect x="284" y="0"   width="54"  height="58"  fill="#EDE9FE" rx="4" opacity=".6"/>
+
+  <rect x="0"   y="78"  width="58"  height="40"  fill="#DBEAFE" rx="4" opacity=".6"/>
+  <rect x="76"  y="78"  width="52"  height="40"  fill="#D1FAE5" rx="4" opacity=".6"/>
+  <rect x="144" y="78"  width="54"  height="40"  fill="#FEF9C3" rx="4" opacity=".6"/>
+  <rect x="214" y="78"  width="54"  height="40"  fill="#FEE2E2" rx="4" opacity=".6"/>
+  <rect x="284" y="78"  width="114" height="40"  fill="#D1FAE5" rx="4" opacity=".6"/>
+
+  <rect x="0"   y="136" width="58"  height="42"  fill="#FEF9C3" rx="4" opacity=".6"/>
+  <rect x="76"  y="136" width="52"  height="42"  fill="#EDE9FE" rx="4" opacity=".6"/>
+  <rect x="144" y="136" width="54"  height="42"  fill="#D1FAE5" rx="4" opacity=".6"/>
+  <rect x="214" y="136" width="54"  height="42"  fill="#DBEAFE" rx="4" opacity=".6"/>
+  <rect x="284" y="136" width="114" height="42"  fill="#FEE2E2" rx="4" opacity=".6"/>
+
+  <rect x="0"   y="196" width="58"  height="42"  fill="#EDE9FE" rx="4" opacity=".6"/>
+  <rect x="76"  y="196" width="52"  height="42"  fill="#FEE2E2" rx="4" opacity=".6"/>
+  <rect x="144" y="196" width="54"  height="42"  fill="#DBEAFE" rx="4" opacity=".6"/>
+  <rect x="214" y="196" width="54"  height="42"  fill="#D1FAE5" rx="4" opacity=".6"/>
+  <rect x="284" y="196" width="114" height="42"  fill="#FEF9C3" rx="4" opacity=".6"/>
+
+  <rect x="0"   y="258" width="58"  height="42"  fill="#D1FAE5" rx="4" opacity=".6"/>
+  <rect x="76"  y="258" width="52"  height="42"  fill="#FEF9C3" rx="4" opacity=".6"/>
+  <rect x="144" y="258" width="54"  height="42"  fill="#EDE9FE" rx="4" opacity=".6"/>
+  <rect x="214" y="258" width="54"  height="42"  fill="#FEE2E2" rx="4" opacity=".6"/>
+  <rect x="284" y="258" width="114" height="42"  fill="#DBEAFE" rx="4" opacity=".6"/>
+
+  <!-- Park/green area -->
+  <rect x="76" y="196" width="52" height="42" fill="#86EFAC" rx="4" opacity=".7"/>
+  <circle cx="102" cy="217" r="10" fill="#22C55E" opacity=".6"/>
+  <circle cx="90"  cy="222" r="7"  fill="#16A34A" opacity=".6"/>
+  <circle cx="115" cy="220" r="8"  fill="#15803D" opacity=".6"/>
+
+  <!-- Mackenzie pin — bigger, green -->
+  <g transform="translate(191, 90)">
+    <circle cx="0" cy="0" r="18" fill="#15803D" opacity=".2"/>
+    <path d="M0,-20 C-10,-20 -18,-12 -18,0 C-18,12 0,28 0,28 C0,28 18,12 18,0 C18,-12 10,-20 0,-20 Z" fill="#16A34A" stroke="white" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="7" fill="white"/>
+    <text x="0" y="4" font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle" fill="#16A34A">M</text>
+    <!-- Pulse rings -->
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#22C55E" stroke-width="2" opacity=".4"/>
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#22C55E" stroke-width="1.5" opacity=".2"/>
+  </g>
+
+  <!-- Other ecopoints -->
+  <g transform="translate(100, 48)">
+    <path d="M0,-12 C-6,-12 -11,-7 -11,0 C-11,7 0,16 0,16 C0,16 11,7 11,0 C11,-7 6,-12 0,-12 Z" fill="#6B7280" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+  <g transform="translate(295, 155)">
+    <path d="M0,-12 C-6,-12 -11,-7 -11,0 C-11,7 0,16 0,16 C0,16 11,7 11,0 C11,-7 6,-12 0,-12 Z" fill="#6B7280" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+  <g transform="translate(155, 220)">
+    <path d="M0,-12 C-6,-12 -11,-7 -11,0 C-11,7 0,16 0,16 C0,16 11,7 11,0 C11,-7 6,-12 0,-12 Z" fill="#6B7280" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+  <g transform="translate(350, 50)">
+    <path d="M0,-12 C-6,-12 -11,-7 -11,0 C-11,7 0,16 0,16 C0,16 11,7 11,0 C11,-7 6,-12 0,-12 Z" fill="#6B7280" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+  <g transform="translate(50, 265)">
+    <path d="M0,-12 C-6,-12 -11,-7 -11,0 C-11,7 0,16 0,16 C0,16 11,7 11,0 C11,-7 6,-12 0,-12 Z" fill="#6B7280" stroke="white" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+  </g>
+
+  <!-- Legend -->
+  <rect x="8" y="255" width="160" height="38" rx="8" fill="white" opacity=".88" stroke="#E5E7EB" stroke-width="1"/>
+  <circle cx="22" cy="267" r="7" fill="#16A34A"/>
+  <text x="22" y="271" font-family="Arial" font-size="7" font-weight="bold" text-anchor="middle" fill="white">M</text>
+  <text x="35" y="271" font-family="Arial, sans-serif" font-size="10" fill="#15803D" font-weight="bold">ReciclaMack</text>
+  <circle cx="22" cy="284" r="6" fill="#6B7280"/>
+  <circle cx="22" cy="284" r="3" fill="white"/>
+  <text x="35" y="288" font-family="Arial, sans-serif" font-size="10" fill="#4B5563">Ecopontos</text>
+</svg>
