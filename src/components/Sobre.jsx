@@ -54,7 +54,7 @@ export function Sobre() {
           transition={{ duration: 0.55 }}
         >
           <img
-            src="/img-lixo-reciclavel-sobre.jpg"
+            src={`${import.meta.env.BASE_URL}images/img-lixo-reciclavel-soibre.jpeg`}
             alt="Mãos segurando folhas jovens — sustentabilidade e cuidado ambiental"
             width={900}
             height={720}
