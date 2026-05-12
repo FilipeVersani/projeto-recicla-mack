@@ -15,7 +15,7 @@ const BANNER_BG =
   'https://images.unsplash.com/photo-1525547719571-d2bd28e6a0d6?w=1920&h=1080&fit=crop&q=85';
 
 /** Painel lateral: placas e componentes eletrônicos */
-const PANEL_IMG = '/images/img-banner-texto.webp';
+const PANEL_IMG = `${import.meta.env.BASE_URL}images/img-banner-texto.webp`;
 
 export function Hero() {
   return (

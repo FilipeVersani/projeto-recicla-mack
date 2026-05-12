@@ -1,5 +1,7 @@
 /** REEE — `categoria` = rótulo abaixo da foto; URLs Unsplash com foco no objeto pedido. */
 
+const BASE = import.meta.env.BASE_URL;
+
 export const linhasReee = [
   {
     id: 'branca',
@@ -38,11 +40,11 @@ export const linhasReee = [
         categoria: 'Máquinas de lavar',
       },
       {
-        src: '/images/img-fogao.jpg',
+        src: `${BASE}images/img-fogao.jpg`,
         categoria: 'Fogões e cooktops',
       },
       {
-        src: '/images/img-micro-ondas.webp',
+        src: `${BASE}images/img-micro-ondas.webp`,
         categoria: 'Micro-ondas',
       },
     ],
@@ -85,7 +87,7 @@ export const linhasReee = [
         categoria: 'Câmeras',
       },
       {
-        src: '/images/img-radio-recivers.jpeg',
+        src: `${BASE}images/img-radio-recivers.jpeg`,
         categoria: 'Rádios e receivers',
       },
     ],
@@ -130,7 +132,7 @@ export const linhasReee = [
         categoria: 'Aspiradores',
       },
       {
-        src: '/images/img-brinquedo-eletronico.webp',
+        src: `${BASE}images/img-brinquedo-eletronico.webp`,
         categoria: 'Brinquedos eletrônicos',
       },
     ],
@@ -172,11 +174,11 @@ export const linhasReee = [
         categoria: 'Celulares, tablets e roteadores',
       },
       {
-        src: '/images/img-impressoras.jpeg',
+        src: `${BASE}images/img-impressoras.jpeg`,
         categoria: 'Impressoras e scanners',
       },
       {
-        src: '/images/img-teclado-mouse.webp',
+        src: `${BASE}images/img-teclado-mouse.webp`,
         categoria: 'Teclados e mouses',
       },
     ],
@@ -206,19 +208,19 @@ export const linhasReee = [
     evitar: ['Esmagar ou perfurar baterias de lítio.', 'Misturar com metal reciclável ou organico.'],
     imagens: [
       {
-        src: '/images/img-lampadas.webp',
+        src: `${BASE}images/img-lampadas.webp`,
         categoria: 'Lâmpadas fluorescentes',
       },
       {
-        src: '/images/img-led.jpg',
+        src: `${BASE}images/img-led.jpg`,
         categoria: 'LEDs com componentes integrados',
       },
       {
-        src: '/images/img-pilhas.webp',
+        src: `${BASE}images/img-pilhas.webp`,
         categoria: 'Baterias de lítio',
       },
       {
-        src: '/images/img-baterias.webp',
+        src: `${BASE}images/img-baterias.webp`,
         categoria: 'Baterias de celular, notebook e ferramentas',
       },
     ],
