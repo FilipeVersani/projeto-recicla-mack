@@ -38,7 +38,7 @@ export const linhasReee = [
         categoria: 'Máquinas de lavar',
       },
       {
-        src: '/images/im-fogao.jpg',
+        src: '/images/img-fogao.jpg',
         categoria: 'Fogões e cooktops',
       },
       {
@@ -85,7 +85,7 @@ export const linhasReee = [
         categoria: 'Câmeras',
       },
       {
-        src: '/images/img-radio-receiver.jpg',
+        src: '/images/img-radio-recivers.jpeg',
         categoria: 'Rádios e receivers',
       },
     ],
@@ -172,7 +172,7 @@ export const linhasReee = [
         categoria: 'Celulares, tablets e roteadores',
       },
       {
-        src: '/images/img-impressoras.jpg',
+        src: '/images/img-impressoras.jpeg',
         categoria: 'Impressoras e scanners',
       },
       {
