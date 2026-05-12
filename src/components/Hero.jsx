@@ -15,8 +15,7 @@ const BANNER_BG =
   'https://images.unsplash.com/photo-1525547719571-d2bd28e6a0d6?w=1920&h=1080&fit=crop&q=85';
 
 /** Painel lateral: placas e componentes eletrônicos */
-const PANEL_IMG =
-  'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=700&fit=crop&q=80';
+const PANEL_IMG = '/images/img-banner-texto.webp';
 
 export function Hero() {
   return (
@@ -53,9 +52,9 @@ export function Hero() {
             ♻️ Lixo eletrônico · Logística reversa
           </motion.span>
           <motion.h1 variants={fadeUp} initial="hidden" animate="show" custom={1}>
-            Descarte certo.
+            Descarte eletrônico consciente.
             <br />
-            <span className="hero__highlight">Cidade mais limpa.</span>
+            <span className="hero__highlight">Uma cidade mais limpa.</span>
           </motion.h1>
 
           <motion.div
@@ -69,15 +68,12 @@ export function Hero() {
               <abbr title="Resíduos de Equipamentos Elétricos e Eletrônicos">REEE</abbr> — o que significa?
             </p>
             <p className="hero__reee-text">
-              <strong>Resíduos de Equipamentos Elétricos e Eletrônicos</strong>: aparelhos que não funcionam mais, foram
-              substituídos ou sobraram de reforma — de geladeira a celular. Não vão para o lixo comum: precisam de
-              coleta especial e reciclagem adequada.
+              <strong>Resíduos de Equipamentos Elétricos e Eletrônicos</strong>: REEE são resíduos de equipamentos elétricos e eletrônicos que deixaram de funcionar ou não têm mais utilidade. Esses materiais não devem ir para o lixo comum, mas precisam de coleta e reciclagem adequadas para evitar impactos ambientais.
             </p>
           </motion.div>
 
           <motion.p className="hero__lead" variants={fadeUp} initial="hidden" animate="show" custom={3}>
-            Conheça as <strong>cinco linhas de cor</strong>, veja exemplos em fotos e use o mapa em{' '}
-            <strong>todas as zonas de São Paulo</strong> — com o ponto <strong>Mackenzie</strong> em destaque.
+            Conheça as categorias do lixo eletrônico, veja exemplos de equipamentos e utilize nosso mapa para conhecer o ecoponto mais próximo de você. 
           </motion.p>
 
           <motion.div className="hero__cta" variants={fadeUp} initial="hidden" animate="show" custom={4}>
@@ -122,8 +118,7 @@ export function Hero() {
             <div className="hero__panel-caption">
               <span className="hero__panel-tag">Impacto real</span>
               <p>
-                REEE mal descartado libera <strong>metais pesados</strong> no solo e na água. Entregar em ecoponto ou
-                ponto credenciado protege a saúde e o meio ambiente.
+               O descarte incorreto de eletrônicos pode <strong>contaminar o solo e a água com substâncias tóxicas</strong>. Destinar esses resíduos corretamente ajuda a proteger o meio ambiente e a saúde da população.  
               </p>
             </div>
           </div>

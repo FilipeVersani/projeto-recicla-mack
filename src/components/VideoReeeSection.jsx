@@ -28,8 +28,7 @@ export function VideoReeeSection() {
             <span className="section__tag">Em vídeo</span>
             <h2 id={titleId}>Por que o descarte correto importa?</h2>
             <p className="video-reee__lead">
-              Veja um vídeo curto sobre o que acontece com resíduos levados a ecopontos — o mesmo princípio vale para{' '}
-              <strong>REEE</strong> e lixo eletrônico: destino certo evita poluição e desperdício de materiais.
+              Assista a este vídeo curto sobre o que acontece com os resíduos levados aos ecopontos, entenda como o descarte incorreto afeta o meio ambiente e veja como a <strong>reciclagem eletrônica</strong> ajuda a reduzir impactos e reaproveitar materiais.
             </p>
             <button type="button" className="btn btn--primary btn--lg video-reee__open" onClick={() => setOpen(true)}>
               ▶ Assistir vídeo

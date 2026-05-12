@@ -14,12 +14,7 @@ export function Sobre() {
           <h2 className="sobre__title">ReciclaMack — foco em REEE</h2>
           <p>
             O <strong>ReciclaMack</strong> é uma iniciativa da{' '}
-            <strong>Universidade Presbiteriana Mackenzie</strong> voltada à logística reversa e ao descarte correto de{' '}
-            <strong>lixo eletrônico</strong>, alinhada a referências municipais e campanhas de conscientização.
-          </p>
-          <p>
-            Esta página concentra, em uma única experiência, as cinco linhas de cor, boas práticas de armazenamento e um
-            mapa com pontos na cidade de São Paulo.
+            <strong>Universidade Presbiteriana Mackenzie</strong> voltada à conscientização sobre o descarte correto de resíduos eletrônicos.  A plataforma reúne informações sobre as linhas de descarte, orientações de armazenamento e pontos de coleta em São Paulo
           </p>
           <div className="sobre__values">
             <div className="value-item">
@@ -28,7 +23,7 @@ export function Sobre() {
               </span>
               <div>
                 <h4>Responsabilidade</h4>
-                <p>REEE contém metais e substâncias que exigem destino técnico — nada de lixo comum.</p>
+                <p>Equipamentos eletrônicos possuem componentes que exigem descarte adequado. Nada de lixo comum!  </p>
               </div>
             </div>
             <div className="value-item">
@@ -37,7 +32,7 @@ export function Sobre() {
               </span>
               <div>
                 <h4>Praticidade</h4>
-                <p>Mapa, filtros e lista sincronizados para achar rapidamente onde levar seus equipamentos.</p>
+                <p>Encontre rapidamente pontos de coleta e informações sobre cada categoria de resíduo eletrônico.  </p>
               </div>
             </div>
             <div className="value-item">
@@ -46,7 +41,7 @@ export function Sobre() {
               </span>
               <div>
                 <h4>Comunidade</h4>
-                <p>Universidade como ponte entre moradores, estudantes e políticas públicas de resíduos.</p>
+                <p>Conscientização ambiental começa com informação acessível e participação coletiva.</p>
               </div>
             </div>
           </div>
@@ -59,7 +54,7 @@ export function Sobre() {
           transition={{ duration: 0.55 }}
         >
           <img
-            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=900&h=720&fit=crop"
+            src="/img-lixo-reciclavel-sobre.jpg"
             alt="Mãos segurando folhas jovens — sustentabilidade e cuidado ambiental"
             width={900}
             height={720}

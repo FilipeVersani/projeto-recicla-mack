@@ -7,7 +7,7 @@ export const linhasReee = [
     cor: '#e2e8f0',
     corAccent: '#94a3b8',
     emoji: '🧊',
-    resumo: 'Grandes eletrodomésticos de linha branca.',
+    resumo: 'Geladeiras, fogões e grandes eletrodomésticos. ',
     exemplos: [
       'Geladeiras e freezers',
       'Máquinas de lavar e secadoras',
@@ -38,11 +38,11 @@ export const linhasReee = [
         categoria: 'Máquinas de lavar',
       },
       {
-        src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/im-fogao.jpg',
         categoria: 'Fogões e cooktops',
       },
       {
-        src: 'https://images.unsplash.com/photo-1585659722983-3a675dab7db2?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-micro-ondas.webp',
         categoria: 'Micro-ondas',
       },
     ],
@@ -53,7 +53,7 @@ export const linhasReee = [
     cor: '#92400e',
     corAccent: '#ca8a04',
     emoji: '📺',
-    resumo: 'Equipamentos de áudio, vídeo e TV.',
+    resumo: 'TVs, monitores e equipamentos de áudio e vídeo.',
     exemplos: [
       'Televisores e monitores',
       'Aparelhos de som e home theater',
@@ -85,7 +85,7 @@ export const linhasReee = [
         categoria: 'Câmeras',
       },
       {
-        src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-radio-receiver.jpg',
         categoria: 'Rádios e receivers',
       },
     ],
@@ -96,7 +96,7 @@ export const linhasReee = [
     cor: '#1d4ed8',
     corAccent: '#38bdf8',
     emoji: '🔌',
-    resumo: 'Pequenos eletrodomésticos, ferramentas elétricas e brinquedos a pilha.',
+    resumo: 'Pequenos eletrodomésticos e ferramentas elétricas. ',
     exemplos: [
       'Liquidificadores, batedeiras e cafeteiras',
       'Aspiradores de pó e ferros elétricos',
@@ -130,7 +130,7 @@ export const linhasReee = [
         categoria: 'Aspiradores',
       },
       {
-        src: 'https://images.unsplash.com/photo-1566576721346-d285fd6a5048?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-brinquedo-eletronico.webp',
         categoria: 'Brinquedos eletrônicos',
       },
     ],
@@ -141,7 +141,7 @@ export const linhasReee = [
     cor: '#059669',
     corAccent: '#34d399',
     emoji: '💻',
-    resumo: 'Informática, telecomunicações e periféricos.',
+    resumo: 'Computadores, celulares e dispositivos de informática. ',
     exemplos: [
       'Computadores, notebooks e servidores',
       'Celulares, tablets e roteadores',
@@ -172,11 +172,11 @@ export const linhasReee = [
         categoria: 'Celulares, tablets e roteadores',
       },
       {
-        src: 'https://images.unsplash.com/photo-1612815154858-60aa4c43e64e?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-impressoras.jpg',
         categoria: 'Impressoras e scanners',
       },
       {
-        src: 'https://images.unsplash.com/photo-1618384887929-2a0284f7edab?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-teclado-mouse.webp',
         categoria: 'Teclados e mouses',
       },
     ],
@@ -187,7 +187,7 @@ export const linhasReee = [
     cor: '#ea580c',
     corAccent: '#fb923c',
     emoji: '🔋',
-    resumo: 'Lâmpadas, pilhas e baterias portáteis.',
+    resumo: 'Resíduos com componentes químicos que exigem descarte especial.',
     exemplos: [
       'Lâmpadas fluorescentes, compactas e tubulares',
       'LEDs com componentes eletrônicos integrados (conforme local)',
@@ -206,19 +206,19 @@ export const linhasReee = [
     evitar: ['Esmagar ou perfurar baterias de lítio.', 'Misturar com metal reciclável ou organico.'],
     imagens: [
       {
-        src: 'https://images.unsplash.com/photo-1532795986287-34145cb88e90?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-lampadas.webp',
         categoria: 'Lâmpadas fluorescentes',
       },
       {
-        src: 'https://images.unsplash.com/photo-1560179707-f14e90ef3624?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-led.jpg',
         categoria: 'LEDs com componentes integrados',
       },
       {
-        src: 'https://images.unsplash.com/photo-1620799140408-87437e0d42d8?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-pilhas.webp',
         categoria: 'Baterias de lítio',
       },
       {
-        src: 'https://images.unsplash.com/photo-1596521631192-2001e51c3a02?w=900&h=600&fit=crop&q=82&auto=format',
+        src: '/images/img-baterias.webp',
         categoria: 'Baterias de celular, notebook e ferramentas',
       },
     ],

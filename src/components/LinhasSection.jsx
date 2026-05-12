@@ -23,8 +23,7 @@ export function LinhasSection() {
           <span className="section__tag">Linhas de cor</span>
           <h2>As 5 linhas do lixo eletrônico (REEE)</h2>
           <p>
-            Organize o descarte por tipo de equipamento — da linha branca à laranja. Abra um card por vez para ver fotos
-            alinhadas ao tema, dicas de armazenamento e destino correto (logística reversa / Recicla Sampa).
+            Organize o descarte por tipo de equipamento, da linha branca à laranja. Veja orientações de armazenamento, reciclagem e destino correto para cada resíduo eletrônico. 
           </p>
         </motion.div>
 
@@ -56,22 +55,22 @@ export function LinhasSection() {
             >
               <div className="step__num">1</div>
               <h4>Apague dados</h4>
-              <p>Celulares, notebooks e HDs: reset e backup. Retire SIM e mídias.</p>
+              <p>Antes do descarte, remova arquivos pessoais de celulares, notebooks e HDs. Retire chips, cartões e mídias removíveis.</p>
             </motion.div>
             <motion.div className="step" whileHover={{ scale: 1.02, y: -2 }}>
               <div className="step__num">2</div>
               <h4>Separe pilhas</h4>
-              <p>Baterias soltas vão para recipiente da linha laranja — não misture com o aparelho na mesma sacola.</p>
+              <p>Pilhas e baterias devem ser descartadas separadamente em coletores específicos. Evite misturar com outros eletrônicos. </p>
             </motion.div>
             <motion.div className="step" whileHover={{ scale: 1.02, y: -2 }}>
               <div className="step__num">3</div>
               <h4>Local seco</h4>
-              <p>Evite umidade e fontes de calor. Grandes volumes: não empilhe de forma instável.</p>
+              <p>Evite fontes de calor, umidade e empilhamento inadequado para preservar os resíduos até a coleta.  </p>
             </motion.div>
             <motion.div className="step" whileHover={{ scale: 1.02, y: -2 }}>
               <div className="step__num">4</div>
               <h4>Ponto credenciado</h4>
-              <p>Use o mapa em toda a capital; o campus Mackenzie aparece em destaque.</p>
+              <p>Utilize o mapa para encontrar ecopontos e locais credenciados próximos de você. O ponto de coleta do campus Mackenzie está em destaque. </p>
             </motion.div>
           </div>
         </motion.div>
